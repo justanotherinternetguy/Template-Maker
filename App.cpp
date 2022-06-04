@@ -32,7 +32,7 @@ void cppComp(string name) {
 "typedef unsigned long int uint32;\n"
 "typedef long long int int64;\n"
 "typedef unsigned long long int uint64;\n\n\n"
-        
+
 "#define INF (int)1e9\n"
 "#define EPS 1e-9\n"
 "#define PI 3.1415926535897932384626433832795\n"
@@ -40,12 +40,12 @@ void cppComp(string name) {
 
 "#define FOR(i,a,b) for (int i = a; i <= b; i++)\n"
 "#define FLP(i,a,b) for (int i = a; i < b; i++)\n"
-        
+
 "mt19937_64 rang(chrono::high_resolution_clock::now().time_since_epoch().count());\n"
 "int rng(int lim) {\n"
     "\tuniform_int_distribution<int> uid(0,lim-1);\n"
     "\treturn uid(rang);\n"
-"}\n\n\n\n\n\n\n\n\n\n"    
+"}\n\n\n\n\n\n"
 
 
 "int main(void) {\n"
@@ -58,7 +58,7 @@ void cppComp(string name) {
 void javaComp(string name) {
     string in = name + ".java";
     ofstream f(in);
-    f << 
+    f <<
 "import java.io.*;\nimport java.math.*;\nimport java.security.*;\nimport java.text.*;\nimport java.util.*;\nimport java.util.concurrent.*;\nimport java.util.regex.*;\n"
 "public class " + name + "{ " + "\n"
     "\tpublic static void main(String[] args) {\n\n"
